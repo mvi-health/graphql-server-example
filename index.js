@@ -97,7 +97,7 @@
   const context = ({
     req
   }) => {
-    console.log(`Query ${req.body.query} variables ${req.body.variables}`);
+    console.log(`Query ${req.body.query} variables ${req.body.variables} Headers: ${JSON.stringify(req.headers)}`);
     return {
       authScope: req.headers
     }
